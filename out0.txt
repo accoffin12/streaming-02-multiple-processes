@@ -5,3 +5,22 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-ltiple_processes.py
+2024-05-04 09:50:12,349 - INFO - 
+===================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-04 at 09:50 AM
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\Tower\anaconda3\envs\env\python.ex
+===================================================================
+
+2024-05-04 09:50:12,351 - INFO - Called recreate_database().
+2024-05-04 09:50:12,351 - INFO - Called drop_table().
+2024-05-04 09:50:12,353 - INFO - Table 'pets' dropped successfully.
+rt_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-04 09:50:18,284 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2024-05-04 09:50:18,284 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-04 09:50:18,332 - ERROR - ERROR while P1 inserting pet Ace: database is locked
+2024-05-04 09:50:18,333 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
