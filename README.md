@@ -4,10 +4,10 @@
 ---
 ## Overview:
 
-This example examines the complexities or regulating database access when handlining multiple process on a shared resource concurrently. The process is executed through the creation of an SQLite database and tables, only to have multiple users or programs attempt to interface and modify the database simultaneously. By simulating this process, it enables users to observe the importance of creating signal regulators to prevent task failures. The second example is a simplified model that depicts the process of creating a simple fake data stream utilizing data from a static source, in this case a CSV file.
+This example examines the complexities of regulating database access when handling multiple process on a shared resource concurrently. The process is executed through the creation of an SQLite database and tables, only to have multiple users or programs attempt to interface and modify the database simultaneously. Simulating this process, it enables users to observe the importance of creating signal regulators to prevent task failures. The second example is a simplified model that depicts the process of creating fake data stream utilizing data from a static source - a CSV file.
 
 ## Table of Contents:
-* [Prerequesites](#Prerequesites)
+* [Prerequisites](#Prerequisites)
 * [Data_Source](#Data_Source)
 * [Files_List](#Files_List)
 * [Task 1. Fork](#Task_1._Fork)
@@ -31,14 +31,14 @@ This example examines the complexities or regulating database access when handli
 4. VS Code Extension: Python (by Microsoft)
 
 ## Data_Source:
-Each year millions of people utilize the NYC subways, the constant movement of the population around the city makes it an idea source to create a fake data stream. The Metropolitan Transportation Authority is responsible for all public transport in New York City and collects data in batches by the hour. This batching creates counts for the total number of passengers boarding a subway at a specific station. It also provides data concerning payment, geography, time, date and locations of moving populations based on stations. MTA Data is commonly utilized when discussing population movements among districts as well as the role of public transport. 
+Annually millions of people utilize the NYC subways, and constant movement of the population around the city makes it an ideal source to create a fake data stream. The Metropolitan Transportation Authority is responsible for all public transport in New York City and collects data in batches by the hour. This batching creates counts for the number of passengers boarding a subway at a specific station. It also provides data concerning payment, geography, time, date and location of moving populations based on stations. MTA Data is commonly utilized when discussing population movements among districts and the role of public transport.
 
 MTA Data is readily available from New York State from their Portal. 
 
 NYC MTA Data for Subways: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
 
 ### Modifications of Source Data:
-The source contained 12 columns, however the MTAHourlyData50R.csv contains 13. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns of their own, adding a 13th column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database.
+The source contained 12 columns, however the MTAHourlyData50R.csv has 13 columns. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns, adding a 13th column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database.
 
 ## Task 1. Fork 
 
@@ -104,12 +104,12 @@ Use out3.txt to document the second run.
 To get more help on the early tasks, see [streaming-01-getting-started](https://github.com/denisecase/streaming-01-getting-started).
 
 ### Reading Error Messages
-Python has pretty helpful error messages. Always read error messages carefully, not all messages are the same. 
-Many errors will contain where the issue is for an example of this see out3.txt. Not all errors are the same, for example one error message which is in out0.txt states that the process is successful. Always check the "Error Message" written into the code to assist in identifying the issue. 
+Python has helpful error messages. Always read error messages carefully, not all messages are the same. 
+Many errors will contain where the issue is for an example of this see out3.txt. Not all errors are the same, for example one error message in out0.txt states that the process is successful. Always check the "Error Message" written into the code to assist in identifying the issue. 
 
 #### Database Is Locked Error
 Do a web search on the sqlite3 'database is locked' error.
-Remember that this is a demonstration of multiple processes accessing a database at once. Each of these processes is acting as a separate instance that is attempting to obtain, modify or remove information from the database. Take note of the multiple processes attempting to insert data into the same table at once. Also examine the creation and drop sections of the code
+Remember that this demonstrates of multiple processes accessing a database at once. Each of these processes is a separate instance that is attempting to obtain, modify or remove information from the database. Take note of the multiple processes trying to insert data into the same table. Also, examine the creation and drop sections of the code
 
 #### Deadlock
 Deadlock is a special kind of locking issue where a process is waiting on a resource or process, that is waiting also. 
