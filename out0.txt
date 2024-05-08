@@ -6,6 +6,8 @@ Run the file once while the tasks are short.
 
 Copy and paste the terminal results (when task_duration is 0) here.
 
+---
+
 PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
 2024-05-07 20:10:37,465 - INFO - 
 ======================================================================
