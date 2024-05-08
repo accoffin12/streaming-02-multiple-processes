@@ -5,3 +5,98 @@ This will clear the console output.
 Run the file once while the tasks are longer. 
 
 Copy and paste the terminal results (when task_duration is 3) here.
+
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:10:37,465 - INFO - 
+======================================================================
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:11:36,298 - INFO -
+======================================================================
+STARTING UP.............................
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\Tower\anaconda3\envs\env\python.exe
+======================================================================
+
+2024-05-07 20:11:36,299 - INFO - Called recreate_database().
+2024-05-07 20:11:36,299 - INFO - Called drop_table().
+2024-05-07 20:11:37,154 - INFO - Table 'pets' dropped successfully.
+2024-05-07 20:11:37,156 - INFO - Called create_table().
+2024-05-07 20:11:37,393 - INFO - Table 'pets' created successfully.
+2024-05-07 20:11:37,535 - INFO - Called process_one().
+2024-05-07 20:11:37,535 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-07 20:11:37,883 - INFO - Called process_two().
+2024-05-07 20:11:37,884 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-07 20:11:37,889 - INFO - Called process_three().
+2024-05-07 20:11:37,890 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-07 20:11:43,440 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2024-05-07 20:11:43,441 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-07 20:11:43,456 - ERROR - ERROR while P3 inserting pet Emma: database is locked
+2024-05-07 20:11:43,457 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-07 20:11:48,405 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-07 20:11:50,822 - ERROR - ERROR while P2 inserting pet Dingo: database is locked
+2024-05-07 20:11:50,838 - ERROR - ERROR while P3 inserting pet Felix: database is locked
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py  
+2024-05-07 20:13:03,337 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-07 at 08:13 PM
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\Tower\anaconda3\envs\env\python.exe
+======================================================================
+
+2024-05-07 20:13:03,338 - INFO - Called recreate_database().
+2024-05-07 20:13:03,338 - INFO - Called drop_table().
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:14:09,745 - INFO -
+======================================================================
+STARTING UP.............................
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:15:06,851 - INFO -
+======================================================================
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:17:30,488 - INFO -
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-07 at 08:17 PM
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\Tower\anaconda3\envs\env\python.exe  
+======================================================================
+
+2024-05-07 20:17:30,488 - INFO - Called recreate_database().
+2024-05-07 20:17:30,489 - INFO - Called drop_table().       
+2024-05-07 20:17:31,175 - INFO - Table 'pets' dropped successfully.
+2024-05-07 20:17:31,176 - INFO - Called create_table().
+2024-05-07 20:17:39,120 - INFO - Table 'pets' created successfully.
+2024-05-07 20:17:39,496 - INFO - Called process_two().
+2024-05-07 20:17:39,496 - INFO - Called process_one().
+2024-05-07 20:17:39,496 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/multiple_processes.py
+2024-05-07 20:20:13,772 - INFO -
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-07 at 08:20 PM
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\Tower\anaconda3\envs\env\python.exe  
+======================================================================
+
+2024-05-07 20:20:13,773 - INFO - Called recreate_database().
+2024-05-07 20:20:13,773 - INFO - Called drop_table().       
+2024-05-07 20:20:14,405 - INFO - Table 'pets' dropped successfully.
+2024-05-07 20:20:14,406 - INFO - Called create_table().
+2024-05-07 20:20:15,315 - INFO - Table 'pets' created successfully.
+2024-05-07 20:20:15,481 - INFO - Called process_one().
+2024-05-07 20:20:15,481 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-07 20:20:15,482 - INFO - Called process_two().
+2024-05-07 20:20:15,482 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-07 20:20:15,560 - INFO - Called process_three().
+2024-05-07 20:20:15,561 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-07 20:20:19,370 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-07 20:20:21,349 - ERROR - ERROR while P2 inserting pet Cooper: database is locked
+2024-05-07 20:20:21,351 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-07 20:20:25,739 - ERROR - ERROR while P1 inserting pet Buddy: database is locked
+2024-05-07 20:20:28,118 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-07 20:20:28,159 - ERROR - ERROR while P2 inserting pet Dingo: database is locked
