@@ -9,7 +9,7 @@ This example examines the complexities of regulating database access when handli
 ## Table of Contents:
 * [Prerequisites](#Prerequisites)
 * [Data_Source](#Data_Source)
-* [Files_List](#Files_List)
+* [File_List](#File_List)
 * [Task 1. Fork](#Task_1._Fork)
 * [Task 2. Clone](#Task_2._Clone)
 * [Task 3. Explore](#Task_3._Explore)
@@ -39,6 +39,30 @@ NYC MTA Data for Subways: https://data.ny.gov/Transportation/MTA-Subway-Hourly-R
 
 ### Modifications of Source Data:
 The source contained 12 columns, however the MTAHourlyData50R.csv has 13 columns. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns, adding a 13th column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database.
+
+## File_List
+#### Python:
+1. 00_check_core_py
+2. about.py
+3. multiple_processes.py
+4. ProcessStreaming_ACoffin.py
+
+#### Text:
+1. 00_report_core.txt
+2. about.txt
+3. out0.txt
+4. out3.txt
+5. out8.txt
+6. out9.txt
+
+#### Database
+1. shared.db
+
+#### Folder ScreenShots
+1. Completed MTA Stream Shot
+2. M2 Assignment Output Capture
+3. M2 Challengeing Part
+---
 
 ## Task 1. Fork 
 
