@@ -1,5 +1,9 @@
 """
 Custom Python Script created to demonstrate loading an SQLite database using MTA Data.
+Created by: Alexandra Coffin
+Northwest Missouri State University
+----
+
 MTA Data is readily available from New York State from their Portal. 
 In this instance the CSV file has been modified to split data and time.
 Additionally, time was converted to military time for the sake of loading into the database.
@@ -7,6 +11,9 @@ Additionally, time was converted to military time for the sake of loading into t
 See README for details on original Dataset and notes on modifications.
 NYC MTA Data for Subways: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
 ---
+To learn about logging and automating terminal readouts as text files reference the following: https://realpython.com/python-logging/
+---
+
 Streaming process: use port 9999
 
 Create a fake stream of data using modified sample of original MTA Data, MTAHourlyData50R.csv.
@@ -16,7 +23,9 @@ Important!
 
 This process will stream forever, or until the end of the rile is read.
 Use Ctrl-C to Stop.
+
 """
+
 
 # Import from Python Standard Library:
 import csv
@@ -24,9 +33,10 @@ import socket
 import time
 import logging
 
-# Set up basic configuration for logging:
+# Set up basic configuration for logging, including creating an output file.
+# Using both the filemode='w' and filename allows us to write terminal information directly as a text file. 
 logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+   filename="out9.txt", filemode= 'w', level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
 # Declare program constants: Host, Port, Address_tuple and input_file

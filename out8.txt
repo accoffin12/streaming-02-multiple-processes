@@ -1,0 +1,58 @@
+"""
+Terminal Data for MTA Data from CSV. Orginally copied as proof that the fake stream had worked. 
+This was numbered 8 as it completed the process but was not from the embedded command within the logging section.
+To learn about logging exicution follow the link: https://realpython.com/python-logging/
+All of the information has been pulled directly from the terminal and has been pasted below.
+This data includes the GeoPoint data as well as longitude and latitude.
+
+"""
+
+
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/ProcessStreaming_ACoffin.py
+2024-05-07 21:51:19,747 - INFO - =======================================================
+2024-05-07 21:51:19,748 - INFO - Starting fake streaming process.
+2024-05-07 21:51:19,748 - INFO - Starting to stream data from MTAHourlyData50R.csv to ('localhost', 9999).
+2024-05-07 21:51:19,748 - INFO - Opened for reading: <_io.TextIOWrapper name='MTAHourlyData50R.csv' mode='r' encoding='cp1252'>.
+2024-05-07 21:51:19,749 - INFO - Skipped Header Row: ['ï»¿transit_date', 'transit_time', 'transit_mode', 'station_complex_id', 'station_complex', 'borough', 'payment_method', 'fare_class_category', 'ridership', 'transfers', 'latitude', 'longitude', 'Georeference']
+2024-05-07 21:51:19,790 - INFO - Sent: b'7/5/2022, 13:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 6, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> & C:/Users/Tower/anaconda3/envs/env/python.exe c:/Users/Tower/Documents/ACoffinCSIS44671/streaming-02-multiple-processes/ProcessStreaming_ACoffin.py
+2024-05-07 21:53:16,788 - INFO - =======================================================
+2024-05-07 21:53:16,788 - INFO - Starting fake streaming process.
+2024-05-07 21:53:16,788 - INFO - Starting to stream data from MTAHourlyData50R.csv to ('localhost', 9999).
+2024-05-07 21:53:16,789 - INFO - Opened for reading: <_io.TextIOWrapper name='MTAHourlyData50R.csv' mode='r' encoding='cp1252'>.
+2024-05-07 21:53:16,790 - INFO - Skipped Header Row: ['ï»¿transit_date', 'transit_time', 'transit_mode', 'station_complex_id', 'station_complex', 'borough', 'payment_method', 'fare_class_category', 'ridership', 'transfers', 'latitude', 'longitude', 'Georeference']
+2024-05-07 21:53:16,817 - INFO - Sent: b'7/5/2022, 13:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 6, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:19,819 - INFO - Sent: b'7/22/2022, 18:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 23, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:22,821 - INFO - Sent: b'7/15/2022, 14:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 16, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:25,824 - INFO - Sent: b'4/19/2022, 6:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 28, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:28,826 - INFO - Sent: b'12/1/2022, 6:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 17, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:31,829 - INFO - Sent: b'4/5/2022, 19:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 5, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:34,832 - INFO - Sent: b'7/26/2022, 22:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 2, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:37,835 - INFO - Sent: b'8/18/2022, 20:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 2, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:40,839 - INFO - Sent: b'9/3/2022, 23:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 1, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:43,842 - INFO - Sent: b'4/25/2022, 9:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 8, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:46,845 - INFO - Sent: b'4/14/2022, 11:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 3, 1, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:49,848 - INFO - Sent: b'9/25/2022, 19:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 2, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:52,851 - INFO - Sent: b'7/27/2022, 20:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 7, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:55,854 - INFO - Sent: b'10/18/2022, 20:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 3, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:53:58,857 - INFO - Sent: b'12/29/2022, 14:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 6, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:01,860 - INFO - Sent: b'11/20/2022, 17:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 4, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:04,863 - INFO - Sent: b'7/4/2022, 20:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 3, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:07,866 - INFO - Sent: b'2/15/2022, 11:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 17, 3, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:10,869 - INFO - Sent: b'3/29/2022, 22:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 1, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:13,872 - INFO - Sent: b'6/27/2022, 8:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 11, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:16,876 - INFO - Sent: b'5/16/2022, 21:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 1, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:19,879 - INFO - Sent: b'12/3/2022, 23:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 1, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:22,882 - INFO - Sent: b'6/7/2022, 9:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 6, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:25,886 - INFO - Sent: b'2/12/2022, 12:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 15, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:28,889 - INFO - Sent: b'10/2/2022, 19:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 2, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:31,892 - INFO - Sent: b'7/28/2022, 13:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 9, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:34,895 - INFO - Sent: b'5/8/2022, 21:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 6, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:37,898 - INFO - Sent: b'12/20/2022, 23:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 1, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:40,901 - INFO - Sent: b'3/28/2022, 9:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 30-Day, 11, 0, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:43,905 - INFO - Sent: b'4/5/2022, 14:00, subway, 445, Pelham Pkwy (5), Bronx, omny, OMNY - Full Fare, 27, 2, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:46,908 - INFO - Sent: b'2/19/2022, 8:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Unlimited 7-Day, 9, 0, 40.8589859, -73.85536194, POINT 
+(-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:49,912 - INFO - Sent: b'4/4/2022, 13:00, subway, 445, Pelham Pkwy (5), Bronx, metrocard, Metrocard - Students, 15, 1, 40.8589859, -73.85536194, POINT (-73.85536193847656 40.858985900878906)' on port 9999. Hit CTRL-C to Stop.
+2024-05-07 21:54:51,168 - ERROR - An error occured: argument of type 'builtin_function_or_method' is not iterable
+PS C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-02-multiple-processes> 
