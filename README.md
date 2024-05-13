@@ -6,6 +6,19 @@
 
 This example examines the complexities of regulating database access when handling multiple process on a shared resource concurrently. The process is executed through the creation of an SQLite database and tables, only to have multiple users or programs attempt to interface and modify the database simultaneously. Simulating this process, it enables users to observe the importance of creating signal regulators to prevent task failures. The second example is a simplified model that depicts the process of creating fake data stream utilizing data from a static source - a CSV file.
 
+## Updates:
+Corrected code to include a function that creates a text document containing an output file. The original produced only a log.
+
+```
+with  open(output_file_name, "w") as output_file:
+                logging.info(f"Write's output to {output_file_name}")
+                writer = csv.writer(output_file, delimiter=",")
+                writer.writerow(["transit_date", "transit_time", "transit_mode", "station_complex_id", "station_complex", "borough, payment_method", "fare_class_category", "ridership", "transfers", "latitude", "longitude", "Georeference"])
+                for row in reader:
+                    transit_date, transit_time, transit_mode, station_complex_id, station_complex, borough, payment_method, fare_class_category, ridership, transfers, latitude, longitude, Georeference = row
+                    writer.writerow([transit_date, transit_time, transit_mode, station_complex_id, station_complex, borough, payment_method, fare_class_category, ridership, transfers, latitude, longitude, Georeference])
+```                               
+
 ## Table of Contents:
 * [Prerequisites](#Prerequisites)
 * [Data_Source](#Data_Source)
